@@ -8,14 +8,14 @@ type Config = {
   profile: {
     author: string;
     description?: string;
-  }
-}
+  };
+};
 
 type SocialLink = {
   icon: string;
   friendlyName: string; // for accessibility
   link: string;
-}
+};
 
 export const siteConfig: Config = {
   title: "Astro Theme Cody",
@@ -23,9 +23,9 @@ export const siteConfig: Config = {
   lang: "en-GB",
   profile: {
     author: "Amy Dang",
-    description: "your bio description"
-  }
-}
+    description: "your bio description",
+  },
+};
 
 /** 
   These are you social media links. 
@@ -51,11 +51,11 @@ export const socialLinks: Array<SocialLink> = [
   {
     icon: "mdi:rss",
     friendlyName: "rss",
-    link: "/rss.xml"
-  }
+    link: "/rss.xml",
+  },
 ];
 
-export const NAV_LINKS: Array<{ title: string, path: string }> = [
+export const NAV_LINKS: Array<{ title: string; path: string }> = [
   {
     title: "Home",
     path: "/",
@@ -68,12 +68,4 @@ export const NAV_LINKS: Array<{ title: string, path: string }> = [
     title: "Blog",
     path: "/blog",
   },
-  {
-    title: "Projects",
-    path: '/projects'
-  },
-  {
-    title: "Archive",
-    path: '/archive'
-  }
 ];
